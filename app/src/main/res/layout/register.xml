@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="242dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/registro" />
+
+    <EditText
+        android:id="@+id/contraseña1"
+        android:layout_width="282dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:hint="Repita la contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contraseña" />
+
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="281dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:hint="Correo"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/telefono" />
+
+    <EditText
+        android:id="@+id/direccion"
+        android:layout_width="281dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:hint="Dirección"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/correo" />
+
+    <EditText
+        android:id="@+id/telefono"
+        android:layout_width="280dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:hint="Telefono"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/codRegistro" />
+
+    <EditText
+        android:id="@+id/nombreEmpresa"
+        android:layout_width="281dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:hint="Nombre de la empresa"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/codRegistro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView2" />
+
+    <EditText
+        android:id="@+id/codRegistro"
+        android:layout_width="281dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:hint="Codigo de registro"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nombreEmpresa" />
+
+    <EditText
+        android:id="@+id/contraseña"
+        android:layout_width="282dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/direccion" />
+
+    <Button
+        android:id="@+id/registrar_btn"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="104dp"
+        android:backgroundTint="#E91E63"
+        android:text="Registrar"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contraseña1" />
+
+    <Button
+        android:id="@+id/cancelar_btn"
+        android:layout_width="227dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="#E91E63"
+        android:text="Cancelar"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/registrar_btn"
+        app:layout_constraintHorizontal_bias="0.987"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contraseña1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

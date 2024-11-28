@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".principal">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="43dp"
+        android:text="Monkey Pox Detection"
+        android:textColor="#E91E63"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="202dp"
+        android:layout_height="191dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/uploadBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/takeBtn"
+        android:layout_width="218dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#E91E63"
+        android:text="Tomar foto"
+        app:layout_constraintBottom_toTopOf="@+id/showBtn"
+        app:layout_constraintEnd_toEndOf="@+id/showBtn"
+        app:layout_constraintStart_toStartOf="@+id/showBtn"
+        app:layout_constraintTop_toBottomOf="@+id/uploadBtn" />
+
+    <Button
+        android:id="@+id/uploadBtn"
+        android:layout_width="227dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="#E91E63"
+        android:text="Cargar Imagen"
+        app:layout_constraintBottom_toTopOf="@+id/takeBtn"
+        app:layout_constraintEnd_toEndOf="@+id/takeBtn"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/takeBtn"
+        app:layout_constraintTop_toBottomOf="@+id/imgView" />
+
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="157dp"
+        android:text="Resultado:"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showBtn" />
+
+    <Button
+        android:id="@+id/showBtn"
+        android:layout_width="212dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="42dp"
+        android:backgroundTint="#E91E63"
+        android:text="Ver resultado"
+        app:layout_constraintBottom_toTopOf="@+id/resultView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/takeBtn" />
+
+    <Button
+        android:id="@+id/salirBtn"
+        android:layout_width="103dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="-100dp"
+        android:backgroundTint="#E91E63"
+        android:text="Salir"
+        app:layout_constraintBottom_toTopOf="@+id/resultView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/takeBtn"
+        app:layout_constraintVertical_bias="1.0" /><![CDATA[
+
+     
+    />
+]]>
+</androidx.constraintlayout.widget.ConstraintLayout>

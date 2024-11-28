@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "150414784291",
+    "project_id": "monkeypoxapp-47bb3",
+    "storage_bucket": "monkeypoxapp-47bb3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150414784291:android:5e3604cd2c0bd5aa44be96",
+        "android_client_info": {
+          "package_name": "com.example.monkeypoxapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUyNwms6-vhTpccRBO0Ur4AikVH4KuNbU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

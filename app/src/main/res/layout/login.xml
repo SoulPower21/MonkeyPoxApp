@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="640dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="42dp"
+        app:layout_constraintBottom_toTopOf="@+id/login_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/txt_usuario"
+        android:layout_width="302dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:ems="10"
+        android:hint="Correo electrónico"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtcontraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="252dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="27dp"
+        android:backgroundTint="#E91E63"
+        android:text="@string/login_btn"
+        android:textColorLink="#673AB7"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/register_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="254dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="142dp"
+        android:backgroundTint="#E91E63"
+        android:text="Registrarse"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_btn" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="286dp"
+        android:layout_marginBottom="-22dp"
+        android:text="Detectar a tiempo es cuidar tu vida"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_usuario"
+        app:layout_constraintStart_toStartOf="@+id/txt_usuario"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtcontraseña"
+        android:layout_width="303dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="275dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_usuario" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
